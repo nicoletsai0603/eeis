@@ -21,238 +21,17 @@
     /*z-index  : 80;*/
 }
 
-video::-webkit-media-controls {
-    display: none !important;
-}
-
-p {
-    letter-spacing: 0.5px;
-    font-size: 18px;
-    line-height: 1.7;
-    color: #666;
-}
-
-a {
-    color: #666;
-    font-size: 16px;
-    transition: all 0.4s;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:focus,
-a:visited {
-    outline: none;
-    text-decoration: none;
-}
-
-.lead {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Hind', sans-serif;
-    background: #fff;
-}
-
-
-/* Start Navigation Bar */
-
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-
-/* //先將stroke隱藏 */
-
-.Beehive_form .stroke,
-svg.stroke {
-    stroke-dashoffset: 2000;
-    stroke-dasharray: 2000;
-}
-
-
-/* //動畫效果 10秒 線性動畫  */
-
-.Beehive_form .ani {
-    animation-delay: 2s;
-    animation: circle-draw 10s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes circle-draw {
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-
-
-/* 滑鼠動畫 */
-
-.mouse {
-    width: 78px;
-    height: 78px;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    margin-left: -39px;
-    text-align: center;
-    z-index: 800;
-    opacity: 1;
-}
-
-.logo1 {
-    opacity: 0;
-}
-
-.mouse .mouse_icon {
-    margin-top: 12px;
-    position: absolute;
-    top: 7px;
-    opacity: 0;
-    left: 27px;
-    animation-delay: 2s;
-    animation: mouse_icon-draw 1s;
-    animation-fill-mode: forwards;
-}
-
-.mouse svg.stroke {
-    animation: circle-draw 10s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-}
-
-@keyframes mouse_icon-draw {
-    100% {
-        opacity: 1;
-        stroke-dasharray: 0;
-        stroke-dashoffset: 0;
-    }
-}
-
-.mouse .arrow {
-    position: absolute;
-    left: calc(50% - 5px);
-    top: 51px;
-    opacity: 0;
-}
-
-.mouse .mouse_line {
-    width: 1px;
-    background: #ffffff;
-    opacity: 0.4;
-    height: 0;
-    position: absolute;
-    left: 50%;
-    margin-left: -1px;
-    bottom: -56px;
-}
-
-.mouse .mouse_line2 {
-    width: 1px;
-    background: #151515;
-    opacity: 0.3;
-    height: 0;
-    position: absolute;
-    left: 50%;
-    margin-left: -1px;
-    margin-top: 56px;
-}
-
-
-/* 圓形動畫 */
-
-.mouse .stroke2 {
-    position: relative;
-    left: 0;
-    top: 0;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-
-.mouse .stroke2 circle {
-    stroke-dasharray: 500;
-    stroke-dashoffset: 500;
-    stroke-width: 2;
-    transition: all 1.2s ease;
-}
-
-.mouse .stroke2.active circle {
-    stroke-dashoffset: 0;
-}
-
-.ani {
-    stroke-dashoffset: 0;
-}
-
-.arrow_ani {
-    animation: arrow_ani 1s ease-out infinite;
-    animation-delay: 2s;
-}
-
-@keyframes arrow_ani {
-    0% {
-        margin-top: 0px;
-    }
-    35% {
-        margin-top: 5px;
-    }
-    0% {
-        margin-top: 0px;
-    }
-    35% {
-        margin-top: 5px;
-    }
-}
-
-h1 {
-    white-space: nowrap;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 37px;
-    color: rgba(22, 22, 22, 1);
-    letter-spacing: 2.59px;
-    text-align: center;
-    padding: 150px 0 5px 0;
-}
-
-h2 {
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 16px;
-    text-align: center;
-    color: rgba(22, 22, 22, 1);
-}
-
-.line2 {
-    height: 1px;
-    width: 253px;
-    background-color: #CECECE;
-    margin-top: 11px;
-    margin-bottom: 60px;
-}
-
-.gray453 {
-    background-color: #F3F4F6;
-    min-height: 453px;
-    width: 100%;
-}
-
 .new_boder {
     display: flex;
     justify-content: center;
     width: 1150px;
     margin: 30px auto 60px;
+}
+
+.new_boder .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .new_boder a {
@@ -266,39 +45,37 @@ a.animation_btn {
     display: block;
     position: relative;
     margin: 0;
-}
-
-a.animation_btn img {
-    transition: all 0.3s ease;
-    transform: scale(1.0);
+    transition: all 0.3s;
 }
 
 a.animation_btn:hover {
     transform: scale(1.1);
-    transition: all 0.3s ease;
+    transition: all 0.3s;
     z-index: 1;
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.6));
 }
 
 a.animation_btn:hover img {
     transform: scale(1.2);
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 }
 
 .black {
     background-color: rgba(0, 0, 0, 0);
-    width: 0;
-    min-height: 0;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    transition: all 0.2s ease;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
     z-index: 1;
 }
 
 a.animation_btn:hover .black {
     background-color: rgba(255, 140, 0, 0.8);
-    transition: all 0.3s ease;
-    bottom: 0;
+    transition: all 0.5s ease;
+    top: 0%;
+    left: 0%;
     width: 100%;
     height: 100%;
 }
@@ -335,7 +112,6 @@ a.animation_btn:hover .black {
 .new_boder a:hover .flex p:before {
     content: "";
     transform: scale(1.5);
-    transition: all 0.3s ease;
     background: url(school_color.svg) center no-repeat;
     margin-bottom: 40px;
 }
@@ -350,7 +126,6 @@ a.animation_btn:hover .black {
 }
 
 .new_boder a.topics:hover .flex p:before {
-    transition: all 0.3s ease;
     background: url(topics_color.svg) center no-repeat;
     margin-bottom: 40px;
 }
@@ -373,7 +148,6 @@ a.animation_btn.topics:hover .black {
 .new_boder .enterprise:hover .flex p::before {
     background: url(enterprise_color.svg) center/contain no-repeat;
     margin-bottom: 40px;
-    transition: all 0.3s ease;
 }
 
 a.animation_btn.enterprise:hover .black {
@@ -398,7 +172,6 @@ a.animation_btn.enterprise:hover .black {
 
 a.animation_btn.society:hover .black {
     background-color: rgba(255, 204, 0, 0.8);
-    transition: all 0.3s ease;
     bottom: 0;
 }
 
@@ -414,16 +187,15 @@ a.animation_btn.society:hover .black {
     background: url(handshake_color.svg) center/contain no-repeat;
     margin-bottom: 40px;
     transform: scale(1.3);
-    transition: all 0.3s ease;
 }
 
 a.animation_btn.global:hover .black {
     background-color: rgba(198, 23, 23, 0.8);
-    transition: all 0.3s ease;
     bottom: 0;
 }
 
-.new_boder a.animation_btn.on {
+.new_boder a.animation_btn .banner_img.on {
+    opacity: 0.8;
+    transition: all 0.3s ease;
     -webkit-filter: grayscale(1) !important;
-    opacity: 0.5 !important;
 }

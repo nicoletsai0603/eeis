@@ -25,21 +25,6 @@
     <script type="text/javascript" async="" src="style/ga.js.下載"></script>
     <script type="text/javascript" async="" src="style/plusone.js.下載" gapi_processed="true"></script>
     <script type="text/javascript" src="style/jquery.min.js"></script>
-    <script type="text/javascript" src="style/jquery-migrate-1.4.1.min.js.下載"></script>
-    <script type="text/javascript" src="style/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="style/jquery.ui.datepicker-zh-TW.js.下載"></script>
-    <script type="text/javascript" src="style/bootstrap.min.js.下載"></script>
-    <script type="text/javascript" src="style/classie.js.下載"></script>
-    <script type="text/javascript" src="style/scripts.js.下載"></script>
-    <script type="text/javascript" src="style/jquery.zoom.min.js.下載"></script>
-    <script type="text/javascript" src="style/owl.carousel.min.js.下載"></script>
-    <script type="text/javascript" src="style/cs.script.js.下載" charset="big5"></script>
-    <script type="text/javascript" src="style/cs.optionSelect.js.下載"></script>
-    <script type="text/javascript" src="style/jquery.currencies.min.js.下載"></script>
-    <script type="text/javascript" src="style/myJs.js.下載"></script>
-    <script type="text/javascript" src="style/bootbox.min.js.下載"></script>
-    <script type="text/javascript" src="style/get_webcounter.ashx" defer="defer"></script>
-    <script type="text/javascript" src="style/jquery.maskedinput.min.js.下載"></script>
 
 
     <script type="text/javascript" src="style/context_push.js.下載"></script>
@@ -485,7 +470,7 @@
 
 
 
-            <div data-wow-delay="0.1s" class="news wow fadeIn">
+            <div class="animation_btn_bbb ">
 
                 <div class="new_boder">
                     <a data-wow-delay="0.1s" class="animation_btn wow flipInY" href="#" target="_blank">
@@ -610,25 +595,27 @@
     </div>
 
     <script src="style/wow.js"></script>
-
     <script>
         $(document).ready(function(e) {
             new WOW().init();
             $(".animation_btn ")
-                .hover(function() {
+                .mousemove(function() {
 
-                    $(this).siblings(".animation_btn").addClass("on"); //其他按鈕透明度降低
+                    $(this).siblings().find(".banner_img").addClass("on"); //其他按鈕透明度降低
                 })
                 .focus(function() {
 
-                    $(this).siblings(".animation_btn").addClass("on"); //其他按鈕透明度降低
+                    $(this).siblings().find(".banner_img").addClass("on"); //其他按鈕透明度降低
                 })
                 .focusout(function() {
-                    $(this).siblings(".animation_btn").removeClass("on"); //其他按鈕透明度恢復
+
+                    $(this).siblings().find(".banner_img").removeClass("on"); //其他按鈕透明度降低
                 })
                 .mouseout(function() {
-                    $(this).siblings(".animation_btn").removeClass("on"); //其他按鈕透明度恢復
+
+                    $(this).siblings().find(".banner_img").removeClass("on"); //其他按鈕透明度降低
                 })
+
         });
     </script>
 
