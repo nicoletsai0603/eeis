@@ -266,7 +266,6 @@ a.animation_btn {
     display: block;
     position: relative;
     margin: 0;
-    transition: all 0.3s ease;
 }
 
 a.animation_btn img {
@@ -425,6 +424,6 @@ a.animation_btn.global:hover .black {
 }
 
 .new_boder a.animation_btn.on {
-    -webkit-filter: grayscale(1);
-    opacity: 0.5;
+    -webkit-filter: grayscale(1) !important;
+    opacity: 0.5 !important;
 }
