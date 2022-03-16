@@ -52,7 +52,7 @@ a.animation_btn:hover {
     transform: scale(1.1);
     transition: all 0.3s;
     z-index: 1;
-    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.6));
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
 }
 
 a.animation_btn:hover img {
@@ -111,7 +111,7 @@ a.animation_btn:hover .black {
 
 .new_boder a:hover .flex p:before {
     content: "";
-    transform: scale(1.5);
+    transform: scale(2);
     background: url(school_color.svg) center no-repeat;
     margin-bottom: 40px;
 }
@@ -166,7 +166,6 @@ a.animation_btn.enterprise:hover .black {
 
 .new_boder a.society:hover .flex p::before {
     background: url(society_color.svg) center/contain no-repeat;
-    transform: scale(1.5);
     margin-bottom: 40px;
 }
 
@@ -186,7 +185,6 @@ a.animation_btn.society:hover .black {
 .new_boder a.global:hover .flex p::before {
     background: url(handshake_color.svg) center/contain no-repeat;
     margin-bottom: 40px;
-    transform: scale(1.3);
 }
 
 a.animation_btn.global:hover .black {
@@ -197,5 +195,5 @@ a.animation_btn.global:hover .black {
 .new_boder a.animation_btn .banner_img.on {
     opacity: 0.8;
     transition: all 0.3s ease;
-    -webkit-filter: grayscale(1) !important;
+    -webkit-filter: grayscale(0.5) !important;
 }
