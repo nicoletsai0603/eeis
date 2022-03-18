@@ -42,9 +42,7 @@
         }
     </style>
 
-    <link rel="stylesheet" href="style/animate.min.css">
-    <link rel="stylesheet" href="style/main-style.css">
-    <link rel="stylesheet" href="style/mobile.css">
+
 </head>
 
 <body class="no_rtl index-template 01_Furniture">
@@ -467,60 +465,88 @@
                     </div>
                 </section>
             </div>
+            <!--start 我增加的資料  -->
+            <link rel="stylesheet" href="css/animate.min.css">
+            <link rel="stylesheet" href="css/main-style.css">
+            <link rel="stylesheet" href="css/mobile.css">
 
 
 
-            <div class="animation_btn_bbb ">
+            <div class="new_boder">
+                <a data-wow-delay="0.1s" class="animation_btn wow flipInY" href="#" target="_blank">
+                    <div class="black"></div>
+                    <div class=" flex">
+                        <p>學校
+                        </p>
+                    </div>
+                    <img class="banner_img " src="img/school.jpg">
 
-                <div class="new_boder">
-                    <a data-wow-delay="0.1s" class="animation_btn wow flipInY" href="#" target="_blank">
-                        <div class="black"></div>
-                        <div class=" flex">
-                            <p>學校
-                            </p>
-                        </div>
-                        <img class="banner_img " src="style/school.jpg">
+                </a>
+                <a data-wow-delay="0.12s" class="animation_btn topics wow fadeInDown" href="#" target="_blank">
+                    <div class="black"></div>
+                    <div class=" flex">
+                        <p>專業主題
+                        </p>
+                    </div>
+                    <img class="banner_img " src="img/school2.jpg">
 
-                    </a>
-                    <a data-wow-delay="0.12s" class="animation_btn topics wow fadeInDown" href="#" target="_blank">
-                        <div class="black"></div>
-                        <div class=" flex">
-                            <p>專業主題
-                            </p>
-                        </div>
-                        <img class="banner_img " src="style/school2.jpg">
+                </a>
+                <a data-wow-delay="0.13s" class="animation_btn enterprise wow flipInY" href="#" target="_blank">
+                    <div class="black"></div>
+                    <div class=" flex">
+                        <p>企業 </p>
+                    </div>
+                    <img class="banner_img " src="img/school3.jpg">
 
-                    </a>
-                    <a data-wow-delay="0.13s" class="animation_btn enterprise wow flipInY" href="#" target="_blank">
-                        <div class="black"></div>
-                        <div class=" flex">
-                            <p>企業 </p>
-                        </div>
-                        <img class="banner_img " src="style/school3.jpg">
+                </a>
+                <a data-wow-delay="0.14s" class="animation_btn society wow fadeInDown" href="#" target="_blank">
+                    <div class="black"></div>
+                    <div class="flex">
+                        <p>社會
+                        </p>
+                    </div>
+                    <img class="banner_img " src="img/school4.jpg">
 
-                    </a>
-                    <a data-wow-delay="0.14s" class="animation_btn society wow fadeInDown" href="#" target="_blank">
-                        <div class="black"></div>
-                        <div class="flex">
-                            <p>社會
-                            </p>
-                        </div>
-                        <img class="banner_img " src="style/school4.jpg">
+                </a>
+                <a data-wow-delay="0.15s" class="animation_btn global wow flipInY" href="#" target="_blank">
+                    <div class="black flex">
+                        <p>機關及國際合作
+                        </p>
+                    </div>
+                    <img class="banner_img " src="img/school5.jpg">
 
-                    </a>
-                    <a data-wow-delay="0.15s" class="animation_btn global wow flipInY" href="#" target="_blank">
-                        <div class="black flex">
-                            <p>機關及國際合作
-                            </p>
-                        </div>
-                        <img class="banner_img " src="style/school5.jpg">
-
-                    </a>
-                </div>
-
-
-
+                </a>
             </div>
+
+
+
+
+            <script src="js/wow.js"></script>
+            <script>
+                $(document).ready(function(e) {
+                    new WOW().init();
+                    $(".animation_btn ")
+                        .mousemove(function() {
+
+                            $(this).siblings().find(".banner_img").addClass("on"); //其他按鈕透明度降低
+                        })
+                        .focus(function() {
+
+                            $(this).siblings().find(".banner_img").addClass("on"); //其他按鈕透明度降低
+                        })
+                        .focusout(function() {
+
+                            $(this).siblings().find(".banner_img").removeClass("on"); //其他按鈕透明度降低
+                        })
+                        .mouseout(function() {
+
+                            $(this).siblings().find(".banner_img").removeClass("on"); //其他按鈕透明度降低
+                        })
+
+                });
+            </script>
+            <!--end 我增加的資料  -->
+
         </main>
     </form>
     <!--footer-->
@@ -594,30 +620,7 @@
         </ul>
     </div>
 
-    <script src="style/wow.js"></script>
-    <script>
-        $(document).ready(function(e) {
-            new WOW().init();
-            $(".animation_btn ")
-                .mousemove(function() {
 
-                    $(this).siblings().find(".banner_img").addClass("on"); //其他按鈕透明度降低
-                })
-                .focus(function() {
-
-                    $(this).siblings().find(".banner_img").addClass("on"); //其他按鈕透明度降低
-                })
-                .focusout(function() {
-
-                    $(this).siblings().find(".banner_img").removeClass("on"); //其他按鈕透明度降低
-                })
-                .mouseout(function() {
-
-                    $(this).siblings().find(".banner_img").removeClass("on"); //其他按鈕透明度降低
-                })
-
-        });
-    </script>
 
 </body>
 
