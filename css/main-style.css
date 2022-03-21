@@ -26,6 +26,7 @@
     justify-content: center;
     max-width: 1170px;
     margin: 30px auto 60px;
+    flex-wrap: wrap;
 }
 
 .new_boder .flex {
@@ -48,14 +49,20 @@ a.animation_btn {
     transition: all 0.3s;
 }
 
-a.animation_btn:hover {
+a.animation_btn .banner_img {
+    width: 100%;
+}
+
+a.animation_btn:hover,
+a.animation_btn:focus {
     transform: scale(1.1);
     transition: all 0.3s;
     z-index: 1;
     filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.5));
 }
 
-a.animation_btn:hover img {
+a.animation_btn:hover img,
+a.animation_btn:focus img {
     transform: scale(1.2);
     transition: all 0.3s;
 }
@@ -71,7 +78,8 @@ a.animation_btn:hover img {
     z-index: 1;
 }
 
-a.animation_btn:hover .black {
+a.animation_btn:hover .black,
+a.animation_btn:focus .black {
     background-color: rgba(255, 140, 0, 0.8);
     transition: all 0.5s ease;
     top: 0%;
@@ -90,7 +98,7 @@ a.animation_btn:hover .black {
 }
 
 .new_boder .flex p {
-    font-size: 22px;
+    font-size: 21rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -98,6 +106,9 @@ a.animation_btn:hover .black {
     line-height: 25px;
     text-align: center;
     color: #FFF;
+    width: 100%;
+    word-break: break-all;
+    padding: 0 10px;
 }
 
 .new_boder a .flex p:before {
@@ -109,11 +120,12 @@ a.animation_btn:hover .black {
     transition: all 0.3s ease;
 }
 
-.new_boder a:hover .flex p:before {
+.new_boder a:hover .flex p:before,
+.new_boder a:focus .flex p:before {
     content: "";
-    transform: scale(1.4);
     background: url(../img/school_color.svg) center no-repeat;
     margin-bottom: 40px;
+    transform: scale(1.3);
 }
 
 .new_boder a.topics .flex p:before {
@@ -125,12 +137,14 @@ a.animation_btn:hover .black {
     transition: all 0.3s ease;
 }
 
-.new_boder a.topics:hover .flex p:before {
+.new_boder a.topics:hover .flex p:before,
+.new_boder a.topics:focus .flex p:before {
     background: url(../img/topics_color.svg) center no-repeat;
     margin-bottom: 40px;
 }
 
-a.animation_btn.topics:hover .black {
+a.animation_btn.topics:hover .black,
+a.animation_btn.topics:focus .black {
     background-color: rgba(125, 220, 108, 0.8);
     transition: all 0.3s ease;
     bottom: 0;
@@ -145,12 +159,14 @@ a.animation_btn.topics:hover .black {
     transition: all 0.3s ease;
 }
 
-.new_boder .enterprise:hover .flex p::before {
+.new_boder .enterprise:hover .flex p::before,
+.new_boder .enterprise:focus .flex p::before {
     background: url(../img/enterprise_color.svg) center/contain no-repeat;
     margin-bottom: 40px;
 }
 
-a.animation_btn.enterprise:hover .black {
+a.animation_btn.enterprise:hover .black,
+a.animation_btn.enterprise:focus .black {
     background-color: rgba(11, 103, 155, 0.8);
     transition: all 0.3s ease;
     bottom: 0;
@@ -164,12 +180,14 @@ a.animation_btn.enterprise:hover .black {
     margin-bottom: 20px;
 }
 
-.new_boder a.society:hover .flex p::before {
+.new_boder a.society:hover .flex p::before,
+.new_boder a.society:focus .flex p::before {
     background: url(../img/society_color.svg) center/contain no-repeat;
     margin-bottom: 40px;
 }
 
-a.animation_btn.society:hover .black {
+a.animation_btn.society:hover .black,
+a.animation_btn.society:focus .black {
     background-color: rgba(255, 204, 0, 0.8);
     bottom: 0;
 }
@@ -182,12 +200,14 @@ a.animation_btn.society:hover .black {
     margin-bottom: 20px;
 }
 
-.new_boder a.global:hover .flex p::before {
+.new_boder a.global:hover .flex p::before,
+.new_boder a.global:focus .flex p::before {
     background: url(../img/handshake_color.svg) center/contain no-repeat;
     margin-bottom: 40px;
 }
 
-a.animation_btn.global:hover .black {
+a.animation_btn.global:hover .black,
+a.animation_btn.global:focus .black {
     background-color: rgba(198, 23, 23, 0.8);
     bottom: 0;
 }
